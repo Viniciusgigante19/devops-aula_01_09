@@ -26,3 +26,5 @@ jobs:
       - name: Exibe informações sobre o repositório
         run: |
           echo "Repositório ${{ github.repository }}"
+      - name: Mostrar conteúdo do arquivo.txt
+        run: cat arquivo.txt
