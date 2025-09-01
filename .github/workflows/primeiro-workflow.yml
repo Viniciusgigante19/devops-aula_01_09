@@ -19,5 +19,5 @@ jobs:
       - name: Lista os arquivos no runner
         run: ls -la
       - name: Exibe informações sobre o repositório
-       run: |
+        run: |
             echo "Repositório ${{ github.repository }}" 
