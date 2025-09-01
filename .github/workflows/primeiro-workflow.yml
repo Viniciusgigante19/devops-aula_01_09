@@ -3,6 +3,10 @@ name: Meu primeiro Workflow de CI
 on: 
   push:
     branches: [main]
+
+    paths:
+     - '**/*.txt'
+
   workflow_dispatch:
 
 jobs: 
