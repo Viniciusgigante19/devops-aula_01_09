@@ -1,0 +1,19 @@
+name: Meu primeiro Workflow de CI
+
+on: 
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs: 
+  meu-primeiro-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Imprime uma mensagem de boas-vindas
+      - run: echo "Iniciando meu primeiro job!"
+      - name: Mostrar o diretório de trabalho
+      - run: pwd
+      - name: Lista os arquivos no runner
+      - run: find .
