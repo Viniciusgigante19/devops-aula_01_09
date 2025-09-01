@@ -2,10 +2,10 @@ name: Meu primeiro Workflow de CI
 
 on: 
   push:
-    branches:
+    branchs-ignore:
       - main
     paths:
-      - '**/*.txt'
+      - 'devops-aula_01_09/**/*.txt'
 
   workflow_dispatch:
 
