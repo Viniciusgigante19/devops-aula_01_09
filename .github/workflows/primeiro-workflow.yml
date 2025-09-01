@@ -17,4 +17,7 @@ jobs:
         run: pwd
 
       - name: Lista os arquivos no runner
-        run: find .
+        run: ls -la
+      - name: Exibe informações sobre o repositório
+       run: |
+            echo "Repositório ${{ github.repository }}" 
