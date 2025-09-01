@@ -2,10 +2,10 @@ name: Meu primeiro Workflow de CI
 
 on: 
   push:
-    branches: [main]
-
+    branches:
+      - main
     paths:
-     - '**/*.txt'
+      - '**/*.txt'
 
   workflow_dispatch:
 
@@ -22,6 +22,7 @@ jobs:
 
       - name: Lista os arquivos no runner
         run: ls -la
+
       - name: Exibe informações sobre o repositório
         run: |
-            echo "Repositório ${{ github.repository }}" 
+          echo "Repositório ${{ github.repository }}"
